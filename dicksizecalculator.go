@@ -22,11 +22,15 @@ func main() {
 		fmt.Scanln(&dicksize)
 		dicksize--
 		fmt.Println("ur REAL size of dick:", dicksize, "cm")
-		if dicksize > 11 && dicksize < 18 {
-			fmt.Println("hole will enjoy")
-		} else {
-			fmt.Println("hole wont enjoy")
-		}
+		fmt.Println(holeorgasm(dicksize))
 	}
 	fmt.Println("lmao")
+}
+
+func holeorgasm(size int) string {
+	if size > 11 && size < 18 {
+		return ("hole will enjoy")
+	} else {
+		return ("hole wont enjoy")
+	}
 }
